@@ -1,4 +1,6 @@
 import React, { Component } from 'react'
+import Typography from '@material-ui/core/Typography';
+import Container from '@material-ui/core/Container';
 
 class Github extends Component {
   constructor(props) {
@@ -18,8 +20,12 @@ class Github extends Component {
   render() {
     return (
       <div className="info">
-        {this.state.userData["name"]}
+        <Container maxWidth="sm">
+      <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }}>
+      {this.state.userData["name"]}
       <img alt="avatar" style={{ width: '140px' }} src={this.state.userData["avatar_url"]} />
+      </Typography>
+      </Container>
       </div>
     )
   }
