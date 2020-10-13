@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-class Headlines extends Component {
+class Github extends Component {
   constructor(props) {
     super(props)
     this.state = { userData: {} }
@@ -24,4 +24,4 @@ class Headlines extends Component {
   }
 }
 
-export default Headlines
+export default Github
