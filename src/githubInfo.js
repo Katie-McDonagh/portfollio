@@ -19,6 +19,7 @@ class Github extends Component {
     return (
       <div className="info">
         {this.state.userData["name"]}
+      <img alt="avatar" style={{ width: '140px' }} src={this.state.userData["avatar_url"]} />
       </div>
     )
   }
