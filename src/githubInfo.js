@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
+import Avatar from './Avatar'
 
 class Github extends Component {
   constructor(props) {
@@ -23,7 +24,7 @@ class Github extends Component {
         <Container maxWidth="sm">
       <Typography component="div" style={{ backgroundColor: '#cfe8fc', height: '100vh' }}>
       {this.state.userData["name"]}
-      <img alt="avatar" style={{ width: '140px' }} src={this.state.userData["avatar_url"]} />
+    <Avatar avatar={this.state.userData["avatar_url"]}/>
       </Typography>
       </Container>
       </div>
